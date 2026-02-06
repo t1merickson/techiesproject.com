@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{HEAD}}
+  </head>
+  <body>
+    <div class="site-wrapper container -container">
+{{NAV}}
+
+<div class="row">
+  <div class="col-xs-12 categories-list">
+      <div class="filter">FILTER BY <span class="carat">&#9662;</span></div>
+            <ul class="categories">
+              {{CATEGORY_LIST}}
+            </ul>
+  </div>
+</div>
+
+<div class="row site-content">
+  <!-- begin loop -->
+  {{GALLERY_CARDS}}
+</div>
+
+{{FOOTER}}
+    </div>
+{{SCRIPTS}}
+  </body>
+</html>

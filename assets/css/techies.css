@@ -1,0 +1,1096 @@
+/* FONTS */
+
+@import url("//hello.myfonts.net/count/309cc8");
+
+@font-face {font-family: 'FFSuperGroteskWebProMedium';src: url('/assets/fonts/309CC8_0_0.eot');src: url('/assets/fonts/309CC8_0_0.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/309CC8_0_0.woff2') format('woff2'),url('/assets/fonts/309CC8_0_0.woff') format('woff'),url('/assets/fonts/309CC8_0_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'FFSuperGroteskWebProRegular';src: url('/assets/fonts/309CC8_1_0.eot');src: url('/assets/fonts/309CC8_1_0.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/309CC8_1_0.woff2') format('woff2'),url('/assets/fonts/309CC8_1_0.woff') format('woff'),url('/assets/fonts/309CC8_1_0.ttf') format('truetype');}
+
+@font-face {font-family: 'TiemposRegular';src: url('/assets/fonts/TiemposTextWeb-Regular.eot');src: url('/assets/fonts/TiemposTextWeb-Regular.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/TiemposTextWeb-Regular.woff2') format('woff2'),url('/assets/fonts/TiemposTextWeb-Regular.woff') format('woff'),url('/assets/fonts/TiemposTextWeb-Regular.ttf') format('truetype');}
+
+body {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  background-color: #fffdf5;
+  padding: 100px 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.5s ease;
+  border-bottom: 3px solid #d2d2d2;
+}
+
+a:hover {
+  color: #ff936d;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: FFSuperGroteskWebProRegular, sans-serif;
+  font-size: 62px;
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+b, strong {
+  font-family: FFSuperGroteskWebProMedium, sans-serif;
+  font-size: 16px;
+  color: #ff936d;
+  line-height: 1.5;
+  letter-spacing: 0.10em;
+  display: block;
+  margin: 40px 0 10px 0;
+}
+
+.post p:first-of-type b {
+  margin-top: 0;
+}
+
+blockquote, blockquote p {
+  padding: 0;
+  border-width: 0;
+  display: block;
+  margin: 40px 0;
+  font-size: 32px;
+  text-align: center;
+}
+
+.site-wrapper {
+  margin: 0 auto;
+  max-width: 1205px;
+}
+
+p, .post, .techies-ss-form-heading {
+  font-family: TiemposRegular, serif; /* TODO */
+  line-height: 1.75;
+  letter-spacing: 0;
+  font-size: 16px;
+}
+
+/* MAIN NAV */
+
+.site-navigation {
+  margin: 0 0 100px 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.site-navigation li {
+  list-style: none;
+}
+
+.site-navigation li a {
+  transition: border-bottom 0.5s ease;
+  padding-bottom: 6px;
+  border-bottom: 5px solid transparent;
+  display: inline-block;
+  line-height: 1;
+}
+
+.site-navigation .active, .site-navigation li a:hover {
+  border-color: #ff936d;
+}
+
+.site-navigation li .logo a {
+  padding-bottom: 0;
+}
+
+.site-navigation .logo a, .site-navigation .logo  a:hover {
+  border-bottom: 0;
+  display: block;
+}
+
+.site-navigation li a {
+  font-family: FFSuperGroteskWebProMedium, sans-serif;
+  letter-spacing: 0.15em;
+  color: #123350;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.about {
+  margin: 10px 0;
+}
+
+.submit {
+  margin: 10px 0;
+  text-align: right;
+}
+
+/* LOGO */
+.logo a {
+  background: url(/assets/images/techies_logo_small_2x.png) center center no-repeat;
+  background-size: contain;
+  display: block;
+  height: 35px;
+}
+
+/* CATEGORIES */
+
+.filter {
+  font-family: FFSuperGroteskWebProMedium, sans-serif;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+  text-align: center;
+  padding: 36px 0;
+  line-height: 0;
+  transition: color 0.5s ease;
+  border-top: 1px solid #123350;
+  border-bottom: 1px solid #123350;
+}
+
+.carat {
+  font-size: 20px;
+  margin: 0 0 0 5px;
+}
+
+.categories-list {
+  color: #acacac;
+
+  /* slide animation */
+  overflow-y: hidden;
+  max-height: 76px;
+
+  clear: both;
+  transition-duration: 0.55s;
+}
+
+.categories-list:hover .filter {
+  color: #123350;
+}
+
+.categories-list:hover, .categories-list.active-list {
+  max-height: 1000px;
+}
+
+.categories {
+  overflow: hidden;
+  margin: 0 0 40px 0;
+  padding: 10px 0 0 0;
+}
+
+.cat-item a {
+  font-family: FFSuperGroteskWebProMedium, sans-serif;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  text-align: left;
+  padding: 10px 20px;
+  border: 1px solid #123350;
+  border-radius: 3px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #000;
+  transition: background-color 0.5s ease;
+}
+
+.cat-item a:hover, .cat-item a.active {
+  background-color: #123350;
+  color: #fffdf5;
+  cursor: pointer;
+}
+
+.cat-item {
+  list-style-type: none;
+  margin-top: 10px;
+  overflow: hidden;
+  float: left;
+}
+
+/* GALLERY */
+
+.site-content {
+}
+
+.site-content img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease;
+}
+
+.site-content img:hover {
+  opacity: 0.7;
+}
+
+.techie-gallery {
+  padding-top:30px;
+}
+
+.techie-thumbnail img {
+  margin-bottom: 15px;
+}
+
+.techie-info {
+  min-height: 65px;
+}
+
+.techie-gallery p {
+  line-height: 1;
+}
+
+.techie-gallery a {
+  display: block;
+  text-decoration: none;
+  color: #123350;
+}
+
+.techie-gallery .name {
+  text-align: center;
+  font-size: 16px;
+  font-family: FFSuperGroteskWebProRegular, sans-serif;
+  letter-spacing: 0.15em;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.techie-gallery .title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 10px;
+  line-height: 2;
+  font-family: FFSuperGroteskWebProMedium, sans-serif;
+  letter-spacing: 0.15em;
+}
+
+/* SITE CONTENT */
+.site-content {
+  overflow: hidden;
+}
+
+/* SITE FOOTER */
+
+.site-footer {
+  margin-top: 100px;
+  overflow: hidden;
+  border-top: 3px solid #123350;
+  border-bottom: 1px solid #123350;
+  padding: 65px 0;
+}
+
+.site-footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer .column {
+  float: left;
+  width: 25%;
+}
+
+@media (max-width: 730px) {
+  blockquote {
+    font-size: 35px;
+  }
+  .site-footer .column {
+    width: 50%;
+    margin: 0 0 50px 0;
+    text-align: center;
+  }
+
+  .site-footer .column:last-of-type {
+    width: 100%;
+    margin: 0;
+  }
+
+  .site-footer .column:last-of-type li.social {
+    margin: 0 25px 0 0;
+  }
+
+  .site-footer .column:last-of-type li.social:last-child {
+    margin-right: 0;
+  }
+
+  .site-footer .column .header {
+    margin: 0 0 50px 0;
+  }
+
+}
+
+.site-footer li:last-child {
+  margin-right: 0;
+}
+
+.site-footer li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.site-footer li a {
+  font-size: 20px;
+  font-family: FFSuperGroteskWebProRegular, sans-serif;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  color: #123352;
+}
+
+.site-footer .header {
+  font-family: FFSuperGroteskWebProMedium, sans-serif;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #123350;
+  margin-bottom: 65px;
+  opacity: 0.5;
+}
+
+.social {
+  transition: opacity 0.5s ease;
+  background-image: url('/d1lhy388c2xgxf/footer-social-2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 23px;
+  width: 23px;
+  display: inline-block;
+  margin: 0 5%;
+}
+
+a.social, .site-footer a, a.techie-thumbnail {
+  border: 0;
+}
+
+.techies-ss-item table {
+  width: 100%;
+}
+.social:hover {
+  opacity: 0.7;
+}
+
+.twitter {
+  background-position: 0 0;
+}
+
+.instagram {
+  background-position: -58px 0;
+}
+
+.facebook {
+  background-position: -115px 0;
+}
+
+.pinterest {
+  background-position: -171px 0;
+}
+
+.medium {
+  background-position: -227px 0;
+}
+
+.copyright {
+  margin: 45px auto 0;
+  text-align: center;
+}
+
+.copyright p {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #acacac;
+  font-family: FFSuperGroteskWebProMedium, sans-serif;
+  letter-spacing: 0.15em;
+}
+
+/* TECHIE VIEW PAGE */
+
+.featured-image img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.techie-name {
+  font-family: FFSuperGroteskWebProRegular, sans-serif;
+  letter-spacing: 0.15em;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 110px;
+  line-height: 1;
+  margin-bottom: 75px;
+}
+
+.techie-name-border {
+  border-bottom: 3px solid #123350;
+}
+
+.post-content-header {
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 65px;
+  border-bottom: 1px solid #123350;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+}
+
+/* TECHIE META */
+
+.meta {
+  margin: 0;
+  padding: 0 50px 0 0;
+  margin-bottom: 65px;
+}
+
+.meta li {
+  overflow: hidden;
+  list-style-type: none;
+  clear: both;
+  border-bottom: 1px solid #123350;
+  padding: 30px 0 30px 45px;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+
+.meta li:last-child {
+  border: 0;
+}
+
+.meta li p {
+  display: inline-block;
+  margin: 0;
+}
+
+.meta .header {
+  font-family: FFSuperGroteskWebProMedium, sans-serif;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #123350;
+  opacity: 0.5;
+  margin-top: 8px;
+  padding-left: 0;
+  padding-right: 0;
+  line-height: 2;
+}
+
+.meta .text {
+  font-family: FFSuperGroteskWebProRegular, sans-serif;
+  letter-spacing: 0.10em;
+  float: right;
+  line-height: 2;
+  text-align: right;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.meta .years {
+  background-image: url('/d1lhy388c2xgxf/techies_interview_icon_years_2x.png');
+  background-size: 23px;
+}
+
+.meta .role {
+  background-image: url('/d1lhy388c2xgxf/techies_interview_icon_position_2x.png');
+  background-size: 23px;
+  display: flex;
+  align-items: center;
+}
+
+.meta .location {
+  background-image: url('/d1lhy388c2xgxf/techies_interview_icon_location_2x.png');
+  background-size: 23px;
+}
+
+.meta .date {
+  background-image: url('/d1lhy388c2xgxf/techies_interview_icon_date_2x.png');
+  background-size: 23px;
+}
+
+.abstract {
+  margin-top: 30px;
+  margin-bottom: 65px;
+}
+
+.personal-links {
+  padding: 40px 0;
+  margin-bottom: 25px;
+  background-color: #ffe8da;
+  text-align: center;
+}
+
+.personal-links h3 {
+  color: #123350;
+  font-family: FFSuperGroteskWebProMedium, sans-serif;
+  letter-spacing: 0.15em;
+  margin: 10px 0 50px 0;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.personal-links ul {
+  margin: 0;
+  padding: 0;
+}
+
+.personal-links ul li {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.personal-links ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+.personal-links ul li a {
+  font-family: FFSuperGroteskWebProRegular, sans-serif;
+  letter-spacing: 0.15em;
+  font-size: 16px;
+  color: #123350;
+  text-decoration: none;
+  border-bottom: 3px solid #d2d2d2;
+}
+
+.body_text {
+  margin-top: 0;
+}
+
+.post {
+}
+
+.links {
+  padding-right: 35px;
+}
+
+.photo {
+  padding-left: 35px;
+}
+
+/* ABOUT PAGE */
+
+.about-content {
+  padding-right: 85px;
+}
+
+.about-gallery {
+  padding-left: 85px;
+}
+
+.about-gallery .social {
+  margin: 30px 10px 75px 0;
+  transition: opacity 0.5s ease;
+  opacity: 0.2;
+}
+
+.about-gallery .social:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+
+.border {
+  display: block;
+  margin: 100px 0;
+  border-bottom: 1px solid #123350;
+}
+
+.about-gallery .portrait {
+  width: 100%;
+}
+
+.techies-about {
+  width: 100%;
+  margin: 150px 0;
+}
+
+.about-gallery h3 {
+  font-family: FFSuperGroteskWebProRegular, sans-serif;
+  margin-top: 0;
+}
+
+.about-gallery h4 {
+  font-family: FFSuperGroteskWebProMedium, sans-serif;
+  letter-spacing: 0.15em;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ff936d;
+  margin: 0;
+}
+
+.team {
+  margin-bottom: 175px;
+}
+
+.partners {
+  margin-bottom: 111px;
+}
+
+.partner {
+  margin-bottom: 65px;
+}
+
+.sponsors .facebook {
+  margin-bottom: 0;
+}
+
+.sponsors .facebook a {
+  border: none;
+}
+
+.sponsors .ueno {
+  padding: 10px 0 0 35px;
+}
+
+.sponsors .ueno a {
+  border: none;
+}
+
+.sponsors .medium {
+}
+
+.large-link {
+  font-family: FFSuperGroteskWebProRegular, sans-serif;
+  font-size: 30px;
+  border-bottom: 5px solid #d2d2d2;
+  margin-top: 45px;
+  margin-bottom: 15px;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.large-link:first-of-type {
+  margin-top: 25px;
+}
+
+.large-link:hover {
+  text-decoration: none;
+}
+
+.contact {
+  margin-bottom: 40px;
+}
+
+.about-social {
+  text-align: center;
+}
+
+/*
+.about-social .social {
+  background-image: url('/d1lhy388c2xgxf/footer-social-2.png');
+  background-repeat: no-repeat;
+  height: 33px;
+  width: 33px;
+  display: inline-block;
+  margin: 0 8%;
+}
+
+.about-social .instagram {
+  background-position: -221px 0;
+}
+
+.about-social .facebook {
+  background-position: -440px 0;
+}
+
+.about-social .pinterest {
+  background-position: -663px 0;
+}
+
+.about-social .medium {
+  background-position: -884px 0;
+}
+*/
+
+/* RESPONSIVENESS */
+
+@media (max-width: 768px) {
+  .techie-name {
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+
+  .site-footer {
+    text-align: center;
+  }
+
+  .site-footer .footer-icon {
+    margin-bottom: 85px;
+  }
+
+  .site-navigation li {
+    font-size: 17px;
+  }
+
+  .personal-links h3 {
+    font-size: 17px;
+  }
+
+  .meta .header, .meta .text {
+    font-size: 17px;
+  }
+
+  .site-footer .header {
+    font-size: 17px;
+    margin: 65px 0;
+  }
+
+  .filter {
+    font-size: 17px;
+  }
+
+  .about {
+    text-align: right;
+    margin: 50px 0 0 0;
+  }
+
+  .submit {
+    text-align: left;
+    margin: 50px 0 0 0;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    padding: 50px 15px;
+  }
+
+  .site-navigation {
+    margin-bottom: 50px;
+  }
+
+  .about-container .site-navigation {
+    margin-bottom: 75px;
+  }
+
+  .categories-list {
+    text-align: center;
+  }
+
+  .cat-item {
+    margin: 0 0 2.564102564102564% 0;
+  }
+
+  .techie-gallery {
+    text-align: center;
+  }
+  .techie-name {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-navigation li a {
+    border-width: 4px;
+  }
+
+  .techie-name {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .meta {
+    padding: 0;
+  }
+
+  .team {
+    margin-bottom: 75px;
+  }
+
+  .partners {
+    margin-bottom: 75px;
+  }
+
+  .about-social .social {
+    margin: 0 6%;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  .links {
+    padding-right: 15px;
+  }
+
+  .photo {
+    padding-left: 15px;
+  }
+
+  .techies-about {
+    margin: 50px 0;
+  }
+
+  .about-content {
+    padding-right: 15px;
+  }
+
+  .about-gallery {
+    padding-left: 15px;
+  }
+
+  .about-gallery.sponsors {
+    margin: 100px 0 75px 0;
+  }
+
+  .photo-slider {
+    display: none;
+  }
+
+  .team .about-gallery {
+    margin-top: 65px;
+  }
+
+  .partner {
+    text-align: center;
+  }
+
+  .large-links {
+    margin-top: 50px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .large-link {
+    font-size: 24px;
+  }
+  .container {
+    padding-left:10px;
+    padding-right:10px;
+   }
+  .row {
+  }
+
+  .techie-info {
+    min-height: 75px;
+  }
+
+  .techie-info .title {
+    display: none;
+  }
+
+  .site-content {
+    padding-top: 30px;
+  }
+  .techie-gallery {
+    padding-top: 0;
+  }
+
+  .site-footer li a {
+    font-size: 22px;
+  }
+  .about-social .social {
+    margin: 0 4%;
+  }
+
+  .techies-about {
+    margin: 25px 0;
+  }
+
+  .partners, .team {
+    margin-bottom: 0;
+  }
+
+
+  h2 {
+    font-size: 40px;
+  }
+  .meta {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .meta li {
+    padding: 20px 0;
+  }
+  .meta li:last-of-type {
+    border-bottom: 1px solid #123350;
+  }
+  .abstract {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .post-content-header {
+    border: 0;
+    margin-bottom: 25px;
+  }
+  b, strong {
+    font-size: 17px;
+  }
+  .post-border {
+    margin-top: 20px;
+    margin-bottom: 35px;
+    border-top: 1px solid #123350;
+  }
+  .meta li p {
+    width: 100%;
+    display: inline-block;
+    line-height: 2;
+  }
+
+  .meta .role {
+    display: block;
+  }
+  .meta .header, .meta .text {
+    text-align: center;
+    padding: 0 25px;
+  }
+}
+
+
+/* image slider */
+/*
+ * jQuery Blueberry Slider v0.4 BETA
+ * http://marktyrrell.com/labs/image-slider/
+ *
+ * Copyright (C) 2011, Mark Tyrrell <me@marktyrrell.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ */
+
+.image-slider { margin: 0 auto; }
+.image-slider .slides {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+.image-slider .slides li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.image-slider .slides li img {
+  display: block;
+  width: 100%;
+  max-width: none;
+}
+.image-slider .slides li.active { display: block; position: relative; }
+.image-slider .crop li img { width: auto; }
+
+.image-slider .pager {
+  height: 40px;
+  text-align: center;
+}
+.image-slider .pager li { display: inline-block; }
+.image-slider .pager li a,
+.image-slider .pager li a span {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  display: block;
+  height: 4px;
+  width: 4px;
+}
+.image-slider .pager li a {
+  padding: 18px 8px;
+-webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.image-slider .pager li a span {
+  overflow: hidden;
+  background: #c0c0c0;
+  text-indent: -9999px;
+-webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.image-slider .pager li.active a span { background: #404040; }
+
+/* SUBMIT FORM */
+
+div.wpcf7-validation-errors, span.wpcf7-not-valid-tip, div.wpcf7-mail-sent-ok {
+  border: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+  font-family: FFSuperGroteskWebProMedium, sans-serif;
+  font-size: 16px;
+  color: #ff936d;
+}
+
+input, textarea {
+  border: 1px solid #b7c0c3;
+  background: transparent;
+  width: 100%;
+  padding: 10px;
+  font-family: TiemposRegular, serif; /* TODO */
+  line-height: 1.75;
+  letter-spacing: 0;
+  font-size: 16px;
+  outline: none;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+input[type="submit"] {
+  font-family: FFSuperGroteskWebProMedium, sans-serif;
+  background-color: #123350;
+  color: #fffdf5;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+
+.techies-ss-form-heading p {
+  margin: 10px 0;
+}
+
+.techies-ss-secondary-text {
+  font-weight: 500;
+}
+
+.techies-ss-form-container {
+  font-family: TiemposRegular, serif;
+  line-height: 1.75;
+  letter-spacing: 0;
+  font-size: 16px;
+}
+
+.techies-ss-q-title {
+  font-weight: 500;
+  color: #123350;
+  font-family: FFSuperGroteskWebProMedium, sans-serif;
+  letter-spacing: 0.10em;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+span[role="alert"] {
+  font-size: 10px;
+}
+
+.about-content.submit-column {
+  margin-bottom: 50px;
+}
+
+.techies-required-message {
+  font-family: FFSuperGroteskWebProMedium, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  color: #ff936d;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.techies-ss-password-warning, .techies-ss-required-asterisk {
+  display: none;
+}
+
+.techies-errorheader b {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 15px;
+}
