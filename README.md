@@ -1,6 +1,6 @@
 # techiesproject.com
 
-An archive of [The Techies Project](https://techiesproject.com), a collection of 100 interviews with people working in tech. Originally a WordPress site, now a static site hosted on Netlify.
+An archive of [The Techies Project](https://techiesproject.com), a collection of 100 interviews with people working in tech. The project and interviews are from January 2016. Originally a WordPress site, now a static site hosted on Netlify.
 
 ## How it works
 
